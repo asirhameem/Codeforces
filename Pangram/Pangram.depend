@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1592585640 source:f:\problem tried\pangram\main.cpp
+	<iostream>
+	<string>
+

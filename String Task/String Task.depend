@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1591185744 source:f:\problem tried\string task\main.cpp
+	<iostream>
+	<string>
+

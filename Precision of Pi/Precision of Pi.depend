@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1592724404 source:f:\problem tried\precision of pi\main.cpp
+	<iostream>
+	<bits/stdc++.h>
+
