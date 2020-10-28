@@ -21,7 +21,7 @@ int main()
         if((line[i] >= 97 && line[i] <= 122) || (line[i] >= 65 && line[i] <= 90))
         {
             //string makeWord = "";
-            while((line[i] >= 97 && line[i] <= 122) || (line[i] >= 65 && line[i] <= 90))
+            while((line[i+1] >= 97 && line[i+1] <= 122) || (line[i+1] >= 65 && line[i+1] <= 90))
             {
                 //makeWord += line[i];
                 i++;
