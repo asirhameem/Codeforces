@@ -1,5 +1,4 @@
 # depslib dependency file v1.0
-1603187037 source:f:\problem tried\tokengeneration\main.cpp
-	<iostream>
-	<string>
+1603915133 source:f:\problem tried\tokengeneration\main.cpp
+	<bits/stdc++.h>
 

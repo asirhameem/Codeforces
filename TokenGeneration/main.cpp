@@ -1,6 +1,4 @@
-
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h>
 
 
 using namespace std;
@@ -8,19 +6,29 @@ using namespace std;
 int main()
 {
     string line;
-    cin >> line;
+    getline(cin, line);
 
+    int sizeOfLine = line.size();
     string output = "";
 
-    int attributeValue = 1;
-    //int variableCount = 0;
-    //int operatorCount = 0;
-    //int separatorCount = 0;
+    int attributeValue = 0;
 
-    for(int i = 0; i < line.size(); i++)
+    string word;
+    string token[sizeOfLine];
+    for(int i = 0; i <= sizeOfLine; i++)
     {
+
         if((line[i] >= 97 && line[i] <= 122) || (line[i] >= 65 && line[i] <= 90))
         {
+            //string makeWord = "";
+            while((line[i] >= 97 && line[i] <= 122) || (line[i] >= 65 && line[i] <= 90))
+            {
+                //makeWord += line[i];
+                i++;
+            }
+            //word = makeWord;
+            attributeValue++;
+
             string first = "<";
             string last = ">";
             string comma = ",";
@@ -29,9 +37,12 @@ int main()
 
             string av = to_string(attributeValue);
 
-            string token = first + variable + comma + av + last; //","  attributeValue  ">";
+            string token = first + variable + comma + av  + last;
+
             output = output + token;
-            attributeValue++;
+
+
+
         }
         else if(line[i] == '+' || line[i] == '-' || line[i] == '*' || line[i] == '=' || line[i] == '/')
         {
@@ -43,10 +54,16 @@ int main()
             output = output + anothertoken;
         }
 
+
+
+
     }
 
     //cout << variableCount << endl;
     //cout << operatorCount << endl;
 
     cout << output << endl;
+    cout << sizeOfLine << endl;
+    cout << attributeValue << endl;
+
 }
