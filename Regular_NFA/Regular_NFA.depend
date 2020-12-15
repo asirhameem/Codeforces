@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1607588017 source:f:\problem tried\regular_nfa\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+

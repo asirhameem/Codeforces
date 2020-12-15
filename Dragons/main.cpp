@@ -13,21 +13,20 @@ int main()
         int x, y;
         cin >> x >> y;
 
-        if(s > x)
+        if(s >= x)
         {
             s = s + y;
             result = "YES";
+        }
+        else
+        {
             break;
 
-        }
-        else if ( s < x)
-        {
-
-            continue;
 
         }
 
     }
 
+cout << s <<endl;
     cout << result << endl;
 }
