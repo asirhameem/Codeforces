@@ -5,19 +5,18 @@ using namespace std;
 
 int main()
 {
-    int n;
+    long long int n;
     cin >> n;
-    int sum = 0;
-    int i = 1;
-    int result  = i;
-    int x = -1;
-    while(i <= n)
+    long long int count = 0;
+
+    if(n % 2 == 0)
     {
-
-        sum = sum + (result*=x) * i;
-        i++;
-
+        count = n/2;
+    }
+    if(n%2 ==1)
+    {
+        count = (n-1)/2 - n;
     }
 
-    cout << sum;
+    cout << count;
 }

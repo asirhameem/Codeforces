@@ -25,6 +25,7 @@ int main()
         string given;
         cin >> given;
         int counter = 0;
+
         for(int i = 0; i < tnum; i++)
         {
             if(given[i] == '2' && given[i+1] == '0')
